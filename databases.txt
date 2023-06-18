@@ -1,0 +1,10 @@
+[18:03:59] [WARNING] the web server responded with an HTTP error code (429) which could interfere with the results of the tests
+[18:03:59] [INFO] checking if the target is protected by some kind of WAF/IPS
+[18:04:52] [WARNING] user aborted in multiple target mode
+do you want to skip to the next target in list? [Y/n/q] Y
+[18:04:52] [WARNING] HTTP error codes detected during run:
+429 (Too Many Requests) - 1 times
+[18:04:52] [INFO] you can find results of scanning in multiple targets mode inside the CSV file 'C:\Users\vigop\AppData\Local\sqlmap\output\results-06162023_0603pm.csv'
+
+[*] ending @ 18:04:52 /2023-06-16/
+

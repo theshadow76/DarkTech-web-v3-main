@@ -1,0 +1,29 @@
+name: Count Lines of Code
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  count:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Count lines of code
+      run: echo "LINES=$(git ls-files | xargs wc -l | tail -n 1)" >> $GITHUB_ENV
+
+    - name: Update README
+      run: |
+        COUNT="${{ env.LINES }}"
+        BADGE="![Lines of code](https://img.shields.io/badge/Lines_of_code-$COUNT-blue)"
+        sed -i "/^![Lines of code]/c\\$BADGE" README.md
+
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Update lines of code count" -a

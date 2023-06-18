@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleadmin.css') }}">
+</head>
+<body>
+  {% block content %}
+  <div class="admin-panel">
+    <nav class="admin-nav">
+      <ul>
+        <li class="dropdown">
+          <a href="#dashboard" class="dropbtn">Dashboard</a>
+          <div class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#updates">Updates</a>
+            <a href="#traffic">Traffic</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#paginas" class="dropbtn">Paginas</a>
+          <div class="dropdown-content">
+            <a href="#todas-las-paginas">Todas Las Paginas</a>
+            <a href="#nuevo-blog">Nuevo Blog</a>
+            <a href="#nueva-pagina">Nueva Pagina</a>
+          </div>
+        </li>
+        <li><a href="#option3">Option 3</a></li>
+        <!-- Add as many options as you need -->
+      </ul>
+    </nav>
+
+    <main class="admin-main">
+      <h1>Welcome to the Admin Panel</h1>
+      <p>Select an option from the navigation menu to get started.</p>
+    </main>
+  </div>
+{% endblock %}
+</body>
+</html>

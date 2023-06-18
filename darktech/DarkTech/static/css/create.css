@@ -1,0 +1,173 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    }
+
+    .side-panel {
+    width: 20%;
+    height: 100vh; /* full viewport height */
+    overflow-y: auto; /* add a scrollbar if the content is too tall */
+    }
+
+    /* Add styles to the heading editor */
+    .heading-editor {
+        margin-bottom: 20px;
+    }
+
+    .heading-editor label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .heading-editor input[type="text"],
+    .heading-editor select {
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+    }
+
+    /* Add styles to the button editor */
+    .button-editor {
+        margin-bottom: 20px;
+    }
+
+    .button-editor label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .button-editor input[type="text"],
+    .button-editor select {
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+    }
+
+    .button-editor button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        background-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    /* Add styles to the basic toolbox */
+    .basic-toolbox {
+        margin-bottom: 20px;
+    }
+
+    .basic-toolbox h2 {
+        margin-bottom: 10px;
+    }
+
+    .basic-toolbox ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .basic-toolbox li {
+        margin-bottom: 5px;
+    }
+
+    .basic-toolbox a {
+        display: block;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    /* Add styles to the advanced toolbox */
+    .advanced-toolbox {
+        margin-bottom: 20px;
+    }
+
+    .advanced-toolbox h2 {
+        margin-bottom: 10px;
+    }
+
+    .advanced-toolbox ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .advanced-toolbox li {
+        margin-bottom: 5px;
+    }
+
+    /* Add styles to the properties */
+    .properties {
+        margin-bottom: 20px;
+    }
+
+    .properties label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .properties textarea {
+        width: 100%;
+        height: 100px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        resize: none;
+    }
+
+    /* Add styles to the editor */
+    .editor {
+        margin-bottom: 20px;
+    }
+
+    .editor #canvas {
+        width: 100%;
+        height: 300px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .editor textarea {
+        width: 100%;
+        height: 200px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        resize: none;
+        margin-bottom: 10px;
+    }
+
+    .editor button[type="submit"] {
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        background-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    .editor,
+    #page-editor {
+    width: 80%;
+    height: 100vh;
+    overflow-y: auto;
+    }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Creator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/create.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="side-panel">
+            <!-- Heading Editor -->
+            <div class="heading-editor">
+              <!-- Heading Editor Options -->
+              <div>
+                <label>Heading Text:</label>
+                <input type="text" id="heading-text" value="Heading" />
+              </div>
+              <div>
+                <label>Heading Level:</label>
+                <select id="heading-level">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+              <!-- Heading Preview -->
+              <h1 id="heading-preview">Heading</h1>
+            </div>
+          
+             <!-- Button Editor -->
+     <!-- Button Editor -->
+    <div class="button-editor">
+        <div class="preview">
+          <button id="button-preview">Button</button>
+        </div>
+        <!-- Button Editor Options -->
+        <div class="button-editor-options"> <!-- Added class -->
+          <div>
+            <label>Button Text:</label>
+            <input type="text" id="button-text" value="Button" />
+          </div>
+          <div>
+            <label>Button Background Color:</label>
+            <input type="color" id="button-background-color" value="#ff0000" />
+          </div>
+          <div>
+            <label>Button Border:</label>
+            <input type="text" id="button-border" value="1px solid black" />
+          </div>
+          <div>
+            <label>Button Size:</label>
+            <select id="button-size">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+        </div>
+      </div>
+          
+            <!-- Basic Toolbox -->
+            <div class="basic-toolbox">
+              <h2>Basic Toolbox</h2>
+              <ul>
+                {% for element in basic_elements %}
+                <li><a href="#" data-element="{{ element.value|e }}">{{ element.name }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          
+            <!-- Advanced Toolbox -->
+            <div class="advanced-toolbox">
+              <h2>Advanced Toolbox</h2>
+              <ul>
+                {% for template in advanced_templates %}
+                <li>{{ template|safe }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          
+            <!-- Properties -->
+            <div class="properties">
+              <label for="css_properties">CSS Properties:</label>
+              <textarea name="css_properties"></textarea>
+            </div>
+          </div>
+
+          
+          <h2>Page Editor</h2>
+          <div id="page-editor"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+</body>
+</html>
