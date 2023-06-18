@@ -5,13 +5,13 @@ import tweepy
 
 class TwitterAPI:
     def __init__(self):
-        self.CLIENT_ID_SECRET = "KmCoAZapOhXI9b-pq37Eq8jwFefAWDS1ynfXm6rTR9kQu-Qokl"
-        self.CLIENT_ID = "bzRHdWNDUXZGNjIyalN0NVJDZnM6MTpjaQ"
-        self.API_KEY = "0xLqPIweifAb0E6ymKeMemJF5"
-        self.API_KEY_SECRET = "gF7LjynN8KRL7MOnomYVbNSYYXnZWL83W78OgF6A1cFTXS6zxi"
-        self.ACCESS_TOKEN = "1668931265435713541-t6uZRhf6YigavQp2TWk3xpiRToVy9p"
-        self.ACCESS_TOKEN_SECRET = "w0OqCVRNUGu5Fv8Q7uHrz63fEZq6Rfl81A5fLxXUldVet"
-        self.BEARER_TOKEN = "AAAAAAAAAAAAAAAAAAAAAC61oAEAAAAATv3V%2Bw%2BDdSmQVzAvpezr44IMGNI%3DD1Vpa8eaAG2r0C2Z0lrzXYUKD7MeLiwWbfPVQAwK9bh7PhqCP5"
+        self.CLIENT_ID_SECRET = ""
+        self.CLIENT_ID = ""
+        self.API_KEY = ""
+        self.API_KEY_SECRET = ""
+        self.ACCESS_TOKEN = ""
+        self.ACCESS_TOKEN_SECRET = ""
+        self.BEARER_TOKEN = ""
         self.base_url = "https://api.twitter.com/2/"
         self.headers = {"Authorization": f"Bearer {self.BEARER_TOKEN}"}
         self.client = self.authenticate()
@@ -44,12 +44,12 @@ class TwitterAPI:
 # Create an instance of the class outside the class
 twitter_api = TwitterAPI()
 
-CLIENT_ID_SECRET = "KmCoAZapOhXI9b-pq37Eq8jwFefAWDS1ynfXm6rTR9kQu-Qokl"
-CLIENT_ID = "bzRHdWNDUXZGNjIyalN0NVJDZnM6MTpjaQ"
-API_KEY = "0xLqPIweifAb0E6ymKeMemJF5"
-API_KEY_SECRET = "gF7LjynN8KRL7MOnomYVbNSYYXnZWL83W78OgF6A1cFTXS6zxi"
-ACCESS_TOKEN = "1668931265435713541-t6uZRhf6YigavQp2TWk3xpiRToVy9p"
-BEARER_TOKEN = "AAAAAAAAAAAAAAAAAAAAAC61oAEAAAAATv3V%2Bw%2BDdSmQVzAvpezr44IMGNI%3DD1Vpa8eaAG2r0C2Z0lrzXYUKD7MeLiwWbfPVQAwK9bh7PhqCP5"
+CLIENT_ID_SECRET = ""
+CLIENT_ID = ""
+API_KEY = ""
+API_KEY_SECRET = ""
+ACCESS_TOKEN = ""
+BEARER_TOKEN = ""
 base_url = "https://api.twitter.com/2/"
 headers = {"Authorization": f"Bearer {BEARER_TOKEN}"}
 client = twitter_api.authenticate()
