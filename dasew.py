@@ -3,7 +3,7 @@ import requests
 import time
 
 # Set up authentication credentials
-bearer_token = "AAAAAAAAAAAAAAAAAAAAAC61oAEAAAAATv3V%2Bw%2BDdSmQVzAvpezr44IMGNI%3DD1Vpa8eaAG2r0C2Z0lrzXYUKD7MeLiwWbfPVQAwK9bh7PhqCP5"
+
 
 # Set up the API endpoint and headers
 base_url = "https://api.twitter.com/2/"
